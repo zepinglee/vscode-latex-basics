@@ -15,7 +15,7 @@
 			"begin": "((@)(?i:preamble))\\s*(\\{)\\s*",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.preamble.bibtex"
+					"name": "keyword.control.preamble.bibtex"
 				},
 				"2": {
 					"name": "punctuation.definition.keyword.bibtex"
@@ -41,7 +41,7 @@
 			"begin": "((@)(?i:preamble))\\s*(\\()\\s*",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.preamble.bibtex"
+					"name": "keyword.control.preamble.bibtex"
 				},
 				"2": {
 					"name": "punctuation.definition.keyword.bibtex"
@@ -67,13 +67,13 @@
 			"begin": "((@)(?i:string))\\s*(\\{)\\s*([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.string-constant.bibtex"
+					"name": "keyword.control.string-command.bibtex"
 				},
 				"2": {
 					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"3": {
-					"name": "punctuation.section.string-constant.begin.bibtex"
+					"name": "punctuation.section.string-command.begin.bibtex"
 				},
 				"4": {
 					"name": "variable.other.bibtex"
@@ -82,10 +82,10 @@
 			"end": "\\}",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.section.string-constant.end.bibtex"
+					"name": "punctuation.section.string-command.end.bibtex"
 				}
 			},
-			"name": "meta.string-constant.braces.bibtex",
+			"name": "meta.string-command.braces.bibtex",
 			"patterns": [
 				{
 					"include": "#field_value"
@@ -96,13 +96,13 @@
 			"begin": "((@)(?i:string))\\s*(\\()\\s*([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.string-constant.bibtex"
+					"name": "keyword.control.string-command.bibtex"
 				},
 				"2": {
 					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"3": {
-					"name": "punctuation.section.string-constant.begin.bibtex"
+					"name": "punctuation.section.string-command.begin.bibtex"
 				},
 				"4": {
 					"name": "variable.other.bibtex"
@@ -111,10 +111,10 @@
 			"end": "\\)",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.section.string-constant.end.bibtex"
+					"name": "punctuation.section.string-command.end.bibtex"
 				}
 			},
-			"name": "meta.string-constant.parenthesis.bibtex",
+			"name": "meta.string-command.parenthesis.bibtex",
 			"patterns": [
 				{
 					"include": "#field_value"
@@ -122,19 +122,19 @@
 			]
 		},
 		{
-			"begin": "((@)[a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\{)\\s*([^\\s,}]*)",
+			"begin": "(@)([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\{)\\s*([^\\s,}]*)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.entry-type.bibtex"
+					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"2": {
-					"name": "punctuation.definition.keyword.bibtex"
+					"name": "storage.type.entry.bibtex"
 				},
 				"3": {
 					"name": "punctuation.section.entry.begin.bibtex"
 				},
 				"4": {
-					"name": "entity.name.type.entry-key.bibtex"
+					"name": "entity.other.entry-key.bibtex"
 				}
 			},
 			"end": "\\}",
@@ -149,7 +149,7 @@
 					"begin": "([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\=)",
 					"beginCaptures": {
 						"1": {
-							"name": "support.function.key.bibtex"
+							"name": "variable.other.field.bibtex"
 						},
 						"2": {
 							"name": "punctuation.separator.key-value.bibtex"
@@ -162,23 +162,27 @@
 							"include": "#field_value"
 						}
 					]
+				},
+				{
+					"match": "[^\\s,]",
+					"name": "invalid.illegal.bibtex"
 				}
 			]
 		},
 		{
-			"begin": "((@)[a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\()\\s*([^\\s,]*)",
+			"begin": "(@)([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\()\\s*([^\\s,]*)",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.other.entry-type.bibtex"
+					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"2": {
-					"name": "punctuation.definition.keyword.bibtex"
+					"name": "storage.type.entry.bibtex"
 				},
 				"3": {
 					"name": "punctuation.section.entry.begin.bibtex"
 				},
 				"4": {
-					"name": "entity.name.type.entry-key.bibtex"
+					"name": "entity.other.entry-key.bibtex"
 				}
 			},
 			"end": "\\)",
@@ -193,7 +197,7 @@
 					"begin": "([a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*)\\s*(\\=)",
 					"beginCaptures": {
 						"1": {
-							"name": "support.function.key.bibtex"
+							"name": "variable.other.field.bibtex"
 						},
 						"2": {
 							"name": "punctuation.separator.key-value.bibtex"
@@ -206,6 +210,10 @@
 							"include": "#field_value"
 						}
 					]
+				},
+				{
+					"match": "[^\\s,]",
+					"name": "invalid.illegal.bibtex"
 				}
 			]
 		},
@@ -264,7 +272,7 @@
 			"match": "[a-zA-Z!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~][a-zA-Z0-9!$&*+\\-./:;<>?@\\[\\\\\\]^_`|~]*",
 			"captures": {
 				"0": {
-					"name": "support.variable.bibtex"
+					"name": "variable.other.bibtex"
 				}
 			}
 		},
@@ -287,7 +295,8 @@
 						{
 							"include": "#nested_braces"
 						}
-					]
+					],
+					"name": "string.quoted.other.bibtex"
 				},
 				{
 					"begin": "\"",
@@ -306,7 +315,8 @@
 						{
 							"include": "#nested_braces"
 						}
-					]
+					],
+					"name": "string.quoted.double.bibtex"
 				}
 			]
 		}
