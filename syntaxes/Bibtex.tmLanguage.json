@@ -128,7 +128,7 @@
 					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"2": {
-					"name": "storage.type.entry.bibtex"
+					"name": "entity.name.type.entry.bibtex"
 				},
 				"3": {
 					"name": "punctuation.section.entry.begin.bibtex"
@@ -176,7 +176,7 @@
 					"name": "punctuation.definition.keyword.bibtex"
 				},
 				"2": {
-					"name": "storage.type.entry.bibtex"
+					"name": "entity.name.type.entry.bibtex"
 				},
 				"3": {
 					"name": "punctuation.section.entry.begin.bibtex"

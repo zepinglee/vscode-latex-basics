@@ -297,7 +297,7 @@
 	},
 	{
 		"c": "!$&*+-./:;<>?@[\\]^_`|~",
-		"t": "text.bibtex meta.entry.parenthesis.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.parenthesis.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "(",
@@ -349,7 +349,7 @@
 	},
 	{
 		"c": "xdata",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -457,7 +457,7 @@
 	},
 	{
 		"c": "inproceedings",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -741,7 +741,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -1117,7 +1117,7 @@
 	},
 	{
 		"c": "xdata",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -1209,7 +1209,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -1629,7 +1629,7 @@
 	},
 	{
 		"c": "inproceedings",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -1913,7 +1913,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.parenthesis.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.parenthesis.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "(",
@@ -1969,7 +1969,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -2025,7 +2025,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -2065,7 +2065,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -2121,7 +2121,7 @@
 	},
 	{
 		"c": "comment@book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -2177,7 +2177,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
@@ -2269,7 +2269,7 @@
 	},
 	{
 		"c": "book",
-		"t": "text.bibtex meta.entry.braces.bibtex storage.type.entry.bibtex"
+		"t": "text.bibtex meta.entry.braces.bibtex entity.name.type.entry.bibtex"
 	},
 	{
 		"c": "{",
